@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	<script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+	<script src="app.js" type="module"></script>
+
+	<title>History Database | Boston Public Library</title>
+</head>
+
+<body>
+	<header class="bpl-header">
+		<div class="container">
+			<h1>
+				<a href="https://www.bpl.org">
+					<img src="logo.png" alt="Boston Public Library" class="bpl-header__logo">
+					<img src="logo-small.png" alt="Boston Public Library" class="bpl-header__logo">
+				</a>
+			</h1>
+			<div class="bpl-header__title">
+				<a href="https://www.bpl.org">← Back to BPL.org</a>
+				<h2>History Database</h2>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<header>
+				<h3>Explore Boston Histories</h3>
+
+				<p>Browse a database of historical collections, exhibitions, digital projects, and repositories.</p>
+				
+				<a href="">
+					Suggest a new resource
+					<svg class="external-icon" aria-hidden="true"><use href="#external-link"></use></svg>
+				</a>
+			</header>
+		</div>
+
+		<table class="display"></table>
+	</main>
+
+	<svg style="display: none;">
+		<symbol id="external-link" width="10" height="10" viewBox="0 0 512 512" fill="currentColor"
+			xmlns="http://www.w3.org/2000/svg">
+			<path width="10" height="10"
+				d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z">
+			</path>
+		</symbol>
+	</svg>
+</body>
+
+</html>
