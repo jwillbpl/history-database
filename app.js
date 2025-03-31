@@ -28,19 +28,22 @@ const data = [
 const table = new DataTable('table', {
 	info: false,
 	paging: false,
-	autoWidth: false,
+	responsive: true,
 	columns: [
 		{
 			title: 'Name',
-			width: '40%'
+			width: '40%',
+			className: 'notranslate',
 		},
 		{
 			title: 'Affiliation',
-			width: '20%'
+			width: '20%',
+			className: 'notranslate',
 		},
 		{
 			title: 'Full Address',
 			width: '20%',
+			className: 'notranslate',
 			orderable: false
 		},
 		{
