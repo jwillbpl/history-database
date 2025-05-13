@@ -100,7 +100,7 @@ h3 {
 }
 
 main header {
-	margin-bottom: 48px;
+	margin-bottom: 80px;
 
 	a {
 		display: inline-flex;
@@ -134,4 +134,58 @@ main header {
 
 .dt-column-order {
 	font-size: 90%;
+}
+
+.dt-layout-row select {
+	border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: transparent;
+    color: inherit;
+    margin-left: 3px;
+}
+
+.dt-layout-cell {
+	text-align: left !important;
+}
+
+tbody .collection-type {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3px;
+
+	span {
+		padding: 5px 10px;
+		border-radius: 12px;
+	}
+
+	.archive-or-special-collection {
+		background-color: #f9c6c9;
+	}
+	.digital-resource {
+		background-color: #a3d8f4;
+	}
+	.historic-building-museum {
+		background-color: #f2d3a1;
+	}
+	.objects---artifacts {
+		background-color: #c6e1bc;
+	}
+	.news {
+		background-color: #ecd9f2;
+	}
+	.historical-society {
+		background-color: #b7e0e5;
+	}
+	.history-holder {
+		background-color: #f3bbd3;
+	}
+}
+
+.dt-container > .dt-layout-row:first-child {
+	flex-direction: row-reverse;
+}
+
+.dt-layout-start, .dt-layout-end {
+	margin: unset !important;
 }
