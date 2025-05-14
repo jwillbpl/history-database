@@ -29,14 +29,12 @@ const table = new DataTable('table', {
 	info: false,
 	paging: false,
 	responsive: true,
-	columnDefs: [
-		{ responsivePriority: 1, targets: 3 }
-	],
 	columns: [
 		{
 			title: 'Name',
 			width: '40%',
 			className: 'notranslate',
+			responsivePriority: 1
 		},
 		{
 			title: 'Affiliation',
@@ -52,6 +50,7 @@ const table = new DataTable('table', {
 		{
 			title: 'CollectionType',
 			width: '20%',
+			responsivePriority: 2,
 			render: function (data) {
 				data = data.map(t => `<span class="${t.toLowerCase().replace(/(\s+|\/|&)/g,'-')}">${t}</span>`)
 				
