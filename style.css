@@ -11,17 +11,24 @@ body {
 	max-width: 1200px;
 }
 
-.bpl-header .container {
+.bpl-header {
 	padding-block: 30px;
+}
+
+.bpl-header .container {
 	display: flex;
 	align-items: end;
-	flex-wrap: wrap;
 }
 
 #google_translate_element {
 	flex-basis: 100%;
-	order: -1;
 	text-align: right;
+}
+
+@media (max-width: 991.98px) {
+	#google_translate_element {
+		margin-bottom: 20px;
+	}
 }
 
 @media (max-width: 991.98px) {
