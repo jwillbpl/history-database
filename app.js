@@ -29,6 +29,9 @@ const table = new DataTable('table', {
 	info: false,
 	paging: false,
 	responsive: true,
+	columnDefs: [
+		{ responsivePriority: 1, targets: 3 }
+	],
 	columns: [
 		{
 			title: 'Name',
@@ -53,7 +56,7 @@ const table = new DataTable('table', {
 				data = data.map(t => `<span class="${t.toLowerCase().replace(/(\s+|\/|&)/g,'-')}">${t}</span>`)
 				
 				return `<div class="collection-type">${data.join('')}</div>`
-            }
+			}
 		},
 	],
 	data
