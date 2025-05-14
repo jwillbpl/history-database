@@ -189,6 +189,14 @@ tbody .collection-type {
 	}
 }
 
+.dt-container:has(.dataTable.collapsed) > .dt-layout-row:first-child:after {
+	content: "Click ► to show more information.";
+	display: block;
+	color: rgba(0, 0, 0, 0.5);
+	font-style: italic;
+	margin-top: 20px;
+}
+
 .dt-container > .dt-layout-row:first-child {
 	flex-direction: row-reverse;
 }
