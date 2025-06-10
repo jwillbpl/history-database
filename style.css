@@ -204,3 +204,14 @@ main a {
 	width: 10px;
 	margin-left: 6px;
 }
+
+main {
+	padding-bottom: 80px;
+}
+
+th {
+	position: sticky !important;
+	top: 0;
+	background: rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(4px);
+}
