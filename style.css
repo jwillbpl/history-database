@@ -175,6 +175,7 @@ tbody .collection-type {
 .dt-container:has(.dataTable.collapsed) > .dt-layout-row:first-child:after {
 	content: "Click ► to show more information.";
 	display: block;
+	width: 100%;
 	color: rgba(0, 0, 0, 0.5);
 	font-style: italic;
 	margin-top: 20px;
@@ -182,6 +183,7 @@ tbody .collection-type {
 
 .dt-container > .dt-layout-row:first-child {
 	flex-direction: row-reverse;
+	flex-wrap: wrap;
 }
 
 .dt-layout-start, .dt-layout-end {
