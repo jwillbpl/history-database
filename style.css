@@ -190,10 +190,8 @@ tbody .collection-type {
 	margin: unset !important;
 }
 
-a {
-	align-items: center;
+main a {
 	color: #3273dc;
-	cursor: pointer;
 
 	&:not(:hover, :focus) {
 		text-decoration: none;
