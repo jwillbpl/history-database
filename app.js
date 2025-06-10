@@ -75,7 +75,7 @@ table.ready(() => {
 	const select = document.createElement('select')
 	select.append(new Option('All Collection Types', ''))
 
-	const column = table.column(3)
+	const column = table.column(4)
 
 	const data = column.data(), allData = []
 	data.each(d => {
