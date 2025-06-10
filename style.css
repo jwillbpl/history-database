@@ -192,6 +192,7 @@ tbody .collection-type {
 
 main a {
 	color: #3273dc;
+	white-space: nowrap;
 
 	&:not(:hover, :focus) {
 		text-decoration: none;
